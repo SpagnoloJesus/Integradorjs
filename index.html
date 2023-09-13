@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseña tu web</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,200"
+    />
+  </head>
+
+  <body>
+    <header>
+      <article class="nav__barra-container">
+        <section class="nav__container-menu">
+          <h1>Onepace.</h1>
+          <div class="nav__btn">
+            <img src="./Assets/cart.svg" class="nav__btn-cart" alt="" />
+            <img
+              class="nav__btn-menu"
+              id="abrir__menu"
+              src="./Assets/menu.svg"
+              alt="menu"
+            />
+          </div>
+
+          <div class="nav__menu">
+            <i class="bx bx-x nav__btn nav__btn-close" id="cerrar__menu"></i>
+
+            <a class="expand" href="#">Inicio</a>
+            <a class="expand" href="#sobrenosotros">Nosotros </a>
+            <a class="expand" href="#servicios">Servicios</a>
+            <a class="expand" href="#galeria">Galeria</a>
+            <a class="expand" href="#contactanos">Contactanos</a>
+            <a class="expand" href="sesion.html">Iniciar sesion</a>
+          </div>
+        </section>
+        <section class="hero__center">
+          <div class="hero__list-contain">
+            <ul class="hero__list">
+              <li class="transition">Diseña</li>
+              <li class="transition">Crea</li>
+              <li class="transition">Eligé</li>
+            </ul>
+          </div>
+          <p>Tu pagina web</p>
+        </section>
+        <div class="scroll__container">
+          <span class="scroll__point"></span>
+        </div>
+      </article>
+      <article>
+        <img src="./Assets/up.svg" class="scroll__top-btn" alt="" />
+      </article>
+    </header>
+    <article id="sobrenosotros" class="sobrenosotros">
+      <section class="sobrenosotros__section">
+        <div class="subtitle_sobrenosotros">
+          <h2>¿Porque elegirnos?</h2>
+          <p>
+            Nuestra mision es conectarnos con el cliente ofreciendole un
+            servicio de web completo y a medida con todas las necesidades que el
+            mercado actual y el usuario requiera.
+          </p>
+        </div>
+        <div class="sobrenosotros__container-card">
+          <div class="sobrenosotros__card">
+            <img src="./Assets/adaptive.svg" alt="" />
+            <h3>Seo</h3>
+            <p>
+              Nos encargamos de que aparescas en los motores de busqueda, de
+              esta forma tus potenciales clientes te encontraran mas facil
+            </p>
+          </div>
+          <div class="sobrenosotros__card">
+            <img src="./Assets/devices.svg" alt="" />
+            <h3>Responsive</h3>
+            <p>
+              Una web que funcione en todos los dispositivos y plataformas,
+              ofreciendo una navegacion fluida y optimizada
+            </p>
+          </div>
+          <div class="sobrenosotros__card">
+            <img src="./Assets/cash.svg" alt="" />
+            <h3>Precio</h3>
+            <p>
+              El precio mas competitivo del mercado, corto plazo de entrega y lo
+              mejor, te asesoramos de forma gratuita.
+            </p>
+          </div>
+          <div class="sobrenosotros__card">
+            <img src="./Assets/soporte.svg" alt="" />
+            <h3>Equipo</h3>
+            <p>
+              Contamos con nuestro equipo de produccion que nos garantiza una
+              confianza del 100%
+            </p>
+          </div>
+          <div class="sobrenosotros__card">
+            <img src="./Assets/mercado.svg" alt="" />
+            <h3>El mejor servicio</h3>
+            <p>
+              Conocemos el mercado y queremos conocerte como cliente, contamos
+              con las tecnicas mas novedosas del mercado
+            </p>
+          </div>
+          <div class="sobrenosotros__card">
+            <img src="./Assets/cafe.svg" alt="" />
+            <h3>¡Queres mas?</h3>
+            <p>
+              Si ninguna de nuestras ideas te convencio, tranquilo, el cafe lo
+              pagamos nosotros, la cita la agendas vos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <article id="servicios" class="conavi">
+        <section class="price__container">
+          <h3 class="price__title">Elegí tu plan</h3>
+          <div class="price__container-card">
+            <div class="price__card-cont" data-id="1">
+              <h3 class="plan__title">Plan diseño basico</h3>
+              <ul class="li__items">
+                <li>Diseño responsive</li>
+                <li>Plantilla a eleccion</li>
+                <li>Redes flotantes</li>
+                <li>Alta en web</li>
+                <li>Enlaces a redes</li>
+                <li>Hosting incluido</li>
+                <li>Formularios</li>
+                <li>Seccion producto</li>
+              </ul>
+              <button class="btn__price price__card-cont-precio">150</button>
+            </div>
+
+            <div class="price__card-cont" data-id="2">
+              <h3 class="plan__title">Plan diseño profesional</h3>
+              <ul class="li__items items__2">
+                <li>Diseño a pedido</li>
+                <li>Seccion galeria</li>
+                <li>Banners</li>
+                <li>Animaciones</li>
+                <li>Carrito de compras</li>
+                <li>Compras online</li>
+                <li>Chatbot</li>
+              </ul>
+              <button class="btn__price price__card-cont-precio">500</button>
+            </div>
+          </div>
+        </section>
+      </article>
+      <article id="galeria" class="grid__proyect">
+        <h2>Plantillas de muestra</h2>
+        <section class="grid__galery">
+          <div class="grid__contain-image">
+            <a
+              href="https://www.templatemonster.com/es/free-html-website-templates/"
+              ><img
+                class="grid__image grid__image1"
+                src="./Assets/plantilla-1.webp"
+                alt="plantillas"
+            /></a>
+          </div>
+          <div class="grid__contain-image">
+            <a
+              href="https://www.templatemonster.com/es/free-html-website-templates/"
+              ><img
+                class="grid__image grid__image2"
+                src="./Assets/plantilla-2.webp"
+                alt="plantillas"
+            /></a>
+          </div>
+          <div class="grid__contain-image">
+            <a
+              href="https://www.templatemonster.com/es/free-html-website-templates/"
+              ><img
+                class="grid__image grid__image3"
+                src="./Assets/plantilla-3.webp"
+                alt="plantillas"
+            /></a>
+          </div>
+          <div class="grid__contain-image">
+            <a
+              href="https://www.templatemonster.com/es/free-html-website-templates/"
+              ><img
+                class="grid__image grid__image4"
+                src="./Assets/plantilla-4.webp"
+                alt="plantillas"
+            /></a>
+          </div>
+          <div class="grid__contain-image">
+            <a
+              href="https://www.templatemonster.com/es/free-html-website-templates/"
+            >
+              <img
+                class="grid__image grid__image5"
+                src="./Assets/plantilla-5.webp"
+                alt="plantillas"
+            /></a>
+          </div>
+          <div class="grid__contain-image">
+            <a
+              href="https://www.templatemonster.com/es/free-html-website-templates/"
+              ><img
+                class="grid__image grid__image5"
+                src="./Assets/plantilla-6.webp"
+                alt="plantillas"
+            /></a>
+          </div>
+          <div class="grid__contain-image">
+            <a
+              href="https://www.templatemonster.com/es/free-html-website-templates/"
+              ><img
+                class="grid__image grid__image5"
+                src="./Assets/plantilla-7.webp"
+                alt="plantillas"
+            /></a>
+          </div>
+          <div class="grid__contain-image">
+            <a
+              href="https://www.templatemonster.com/es/free-html-website-templates/"
+              ><img
+                class="grid__image grid__image5"
+                src="./Assets/plantilla-8.webp"
+                alt="plantillas"
+            /></a>
+          </div>
+          <div class="grid__contain-image">
+            <a
+              href="https://www.templatemonster.com/es/free-html-website-templates/"
+              ><img
+                class="grid__image grid__image5"
+                src="./Assets/plantilla-9.webp"
+                alt="plantillas"
+            /></a>
+          </div>
+        </section>
+      </article>
+      <article id="contactanos" class="form">
+        <section class="contact__form">
+          <div>
+            <h2>Mandanos tus dudas</h2>
+          </div>
+          <div class="imput__flex">
+            <div class="imput">
+              <label for="name"></label>
+              <input
+                class="imput__box"
+                type="text"
+                id="name"
+                placeholder="Tu nombre"
+              />
+            </div>
+            <div class="imput">
+              <label for="email"></label>
+              <input
+                class="imput__box"
+                type="email"
+                id="email"
+                placeholder="Tu Email"
+              />
+            </div>
+            <div class="imput">
+              <label for="number"></label>
+              <input
+                class="imput__box"
+                type="number"
+                id="number"
+                placeholder="Tu tel"
+              />
+            </div>
+          </div>
+          <div class="imput">
+            <label for="msj"></label>
+            <textarea
+              class="imput__box"
+              type="texta"
+              id="msj"
+              placeholder="Escribinos"
+            ></textarea>
+          </div>
+          <div>
+            <input class="imput__box sb" type="submit" value="Enviar" />
+          </div>
+        </section>
+      </article>
+    </article>
+    <article class="carrito">
+      <section class="carrito__container" id="carrito">
+        <section class="carrito__header">
+          <p>Carrito</p>
+          <i class="bx bx-x carrito__btn-cerrar"></i>
+        </section>
+        <section class="carrito__main">
+          <p class="carrito__main-leyenda">Sin productos</p>
+        </section>
+        <section class="carrito__footer">
+          <div>
+            <p class="carrito__footer-total">Total</p>
+            <p class="carrito__footer-dinero"></p>
+          </div>
+          <button class="carrito__footer-btn">Comprar</button>
+        </section>
+      </section>
+    </article>
+    <article class="notificacion__container">
+      <img class="notificacion__icon" src="./Assets/check.svg" alt="" />
+    </article>
+
+  <article>
+    <section>
+      <img src="" alt="">
+      <p></p>
+    </section>
+  </article>
+    <footer>
+      <div class="footer">
+        <h3>Onepace</h3>
+        <p>Pagina de muestra integrador Nucba. Octubre 2022. Spagnolo Jesus.</p>
+        <div>
+          <a href="https://www.facebook.com/jeesu.spagnolo"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <a href="https://www.instagram.com/jeesuspagnolo/?hl=es"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="#"><i class="bx bxl-reddit"></i></a>
+          <a href="https://github.com/SpagnoloJesus/Integrador-"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="src/index.js" type="module" defer></script>
+  </body>
+</html>
