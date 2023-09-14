@@ -1,10 +1,19 @@
-import { productos } from "./datos/productos.js";
-const $producto = document.getElementById("servicios");
 const $carritoVentana = document.getElementById("carrito");
 const $notificacion = document.querySelector(".notificacion__container");
 let carrito = [];
 
 const $cards = document.querySelectorAll(".price__card-cont");
+
+export function cargarCarritoDesdeLocalStorage() {
+  const carritoGuardado = localStorage.getItem("carrito");
+  if (carritoGuardado) {
+    carrito = JSON.parse(carritoGuardado);
+    renderCarrito(); // Esto actualizará la interfaz con los productos del carrito.
+  }
+}
+function guardarCarritoEnLocalStorage() {
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+}
 
 let total = 0;
 export const renderCarrito = () => {
@@ -69,6 +78,7 @@ $cards.forEach(($card) => {
       nombre: $nombreProducto,
       precio: $precio,
     });
+    guardarCarritoEnLocalStorage();
 
     // Mostrar la notificación
     $notificacion.classList.add("notificacion__container--active");
@@ -96,5 +106,7 @@ $carritoVentana.addEventListener("click", (e) => {
       total -= parseFloat(carrito[indexProducto]?.precio || 0); // Restar el precio si existe el producto
     }
     renderCarrito();
+
+    guardarCarritoEnLocalStorage();
   }
 });
