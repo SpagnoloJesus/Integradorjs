@@ -42,11 +42,11 @@ export const renderCarrito = () => {
     const plantilla = `
         <section class="carrito__producto-info">
 
-          <p class="carrito__nombre">$${productoCarrito.nombre}</p>
+          <p class="carrito__nombre">${productoCarrito.nombre}</p>
         </section>
         <section class="carrito__precio-delete">
           <button class="carrito-delete"><img src="../../assets/exit.svg"></button>
-          <p class="carrito__price">${productoCarrito.precio}</p>
+          <p class="carrito__price">$${productoCarrito.precio}</p>
         </section>
         `;
     const itemCarrito = document.createElement("div");
