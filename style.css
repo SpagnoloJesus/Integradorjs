@@ -834,7 +834,7 @@
   align-items: center;
   position: fixed;
   top: 0px;
-  z-index: 999;
+
   background: rgba(68, 68, 68, 0.7);
   visibility: hidden;
   opacity: 0;
@@ -846,8 +846,10 @@
 
 .carrito--active {
   visibility: visible;
+  display: flex;
   opacity: 1;
   transform: translateY(0);
+  z-index: 999;
 }
 
 .carrito__container {
@@ -934,7 +936,11 @@
 @media screen and (max-width: 1080px) {
   .carrito__container {
     width: 90%;
-    height: 40%;
+    height: auto;
+  }
+
+  .carrito {
+    overflow-y: scroll;
   }
 }
 
